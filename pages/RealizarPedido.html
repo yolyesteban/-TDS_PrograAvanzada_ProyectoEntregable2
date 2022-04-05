@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="../css/styles.css" rel="stylesheet" />
+
+    <title>Pedido</title>
+</head>
+
+<body style="padding: 1em">
+    <div class="row">
+        <div class="col-md-12">
+            <form id="formulario" method="post">
+                <h1>Realizar Pedido</h1>
+
+                <fieldset>
+
+                    <legend>
+                        <span class="number">1</span> Realizar Pedido
+                    </legend>
+
+                    <label for="codigo-producto">Código Producto:</label>
+                    <input type="text" id="codigo-producto" name="codigo-producto" disabled />
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" />
+
+                    <label for="proveedor">Proveedor:</label>
+                    <select id="proveedor">
+                        <option value="1">Pantene</option>
+                        <option value="2">Head Shoulders</option>
+                        <option value="3">Dove</option>
+                      </select>
+
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" id="categoria" name="categoria" />
+
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" />
+
+                </fieldset>
+
+                <button type="submit">Realizar Pedido</button>
+                <button type="button" id="mostrar-productos">Mostrar Productos</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="../js/RealizarPedido.js"></script>
+</body>
+
+</html>
